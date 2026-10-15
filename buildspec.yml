@@ -1,0 +1,13 @@
+version: 0.2
+
+phases:
+  build:
+    commands:
+      - chmod +x scripts/install_dependencies.sh
+      - chmod +x scripts/start_server.sh
+      - echo "Docker deployment files prepared"
+
+artifacts:
+  files:
+    - '**/*'
+  discard-paths: no
